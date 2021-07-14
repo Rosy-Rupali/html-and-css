@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox-Cards</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+        body{
+            background: white;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 90%;
+            margin: 50px, auto;
+        }
+        .heading{
+            font-size: 30px;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            color: maroon;
+            text-shadow: 3px 3px 1px black;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+        .card{
+            width: 20%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin: 50px;
+        }
+        .card-header{
+            text-align: center;
+            padding: 15px 10px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: #fff;
+        }
+        .card-body{
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .card-body img{
+            display: block;
+            margin: 0 auto;
+           max-width: 100%;
+        }
+        .card-body .btn{
+            display: block;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            margin: 30px;
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>CSS Flexbox Cards</h1>
+        </div>
+        <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h1>React</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/react.png" alt="react">
+                <p>
+                    React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. 
+                    Whether you want to get a taste of React, add some interactivity to a simple HTML page.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>Java</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/java.png" alt="java">
+                <p>
+                    Java is a programming language and computing platform first released by Sun Microsystems in 1995. 
+                    There are lots of applications and websites that will not work unless you have Java installed, and more are created every day. 
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>Angular</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/angular.png" alt="angular">
+                <p>
+                    Angular puts you in control over scalability.
+                    Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>CSS</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/css.png" alt="css">
+                <p>
+                    CSS stands for Cascading Style Sheets.
+                    CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+                    CSS saves a lot of work. 
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>HTML</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/html.png" alt="html">
+                <p>
+                    HTML stands for Hyper Text Markup Language. It is the standard markup language for creating Web pages.
+                    It describes the structure of a Web page.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            </div>
+        <div class="card">
+            <div class="card-header">
+                <h1>Javascript</h1>
+            </div>
+            <div class="card-body">
+                <img src="../asset/photos/js.jpg" alt="js">
+                <p>
+                    JavaScript is a scripting or programming language that allows you to implement complex features on web pages.
+                    JavaScript and Java are completely different languages, both in concept and design.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

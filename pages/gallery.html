@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Photo Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            justify-content: space-evenly;
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+            max-height: 100vh;
+        }
+        .cards img{
+            margin: 10px;
+            border: 3px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+            max-width: 23vw;
+        }
+        h1{
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            color: #00539F;
+            text-shadow: 3px 3px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Photo-Gallery</h1></header>
+    <div class="cards">
+        <img src="../asset/photos/gallery1.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery2.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery3.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery4.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery5.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery6.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery7.jpg" alt="Sample photo">
+        <img src="../asset/photos/gallery8.jpg" alt="Sample photo">
+    </div>
+</body>
+</html>

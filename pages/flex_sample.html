@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen -Flexbox</title>
+    <style>
+        body{
+            padding: 2em;
+        }
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center ;
+        }
+        .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua ;
+        }
+
+        .sideBarLeftItem{ 
+            background: gold;
+            order: 2;
+         }
+        .sideBarRightItem{ 
+            background: hotpink;
+            order: 3;
+         }
+        .sideBarItem{flex: 1 0 0; border: 0px solid green;}
+        .mainContentItem{
+            flex: 3 0px;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+   <header class="headerContainer"><h1>HEADER -FlexBox Web Layout</h1></header> 
+    <div class="mainContainer">
+        <section class="mainContentItem">
+        <article>
+            <h2>First Article</h2>
+            <p>Topic sentences are similar to mini thesis statements. Like a thesis statement, a topic sentence has a specific main point.
+                 Whereas the thesis is the main point of the essay, the topic sentence is the main point of the paragraph. 
+                 Like the thesis statement, a topic sentence has a unifying function.</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>But a thesis statement or topic sentence alone doesn’t guarantee unity. An essay is unified if all the paragraphs relate to 
+                the thesis, whereas a paragraph is unified if all the sentences relate to the topic sentence. 
+                Note: Not all paragraphs need topic sentences. </p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>This topic sentence forecasts the central idea or main point of the paragraph: “politicians” and “journalists” rely on Twitter. 
+                The rest of the paragraph will focus on these two Twitter-user groups, thereby fulfilling the promise made by the topic sentence. 
+                By avoiding irrelevant information that does not relate to the topic sentence, you can compose a unified paragraph.</p>
+        </article>
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html>
